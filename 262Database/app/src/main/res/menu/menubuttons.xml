@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/deleteMenuItem"
+        android:checkable="false"
+        android:enabled="true"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="delete "
+        android:visible="true"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/updateRecipe"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="ifRoom"
+        android:title="update"
+        tools:ignore="AppCompatResource" />
+</menu>

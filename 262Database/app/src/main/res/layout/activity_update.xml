@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <EditText
+        android:id="@+id/updateRecipeName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/updateNotes"
+        app:layout_constraintEnd_toEndOf="@+id/updateProcess"
+        app:layout_constraintStart_toStartOf="@+id/updateProcess"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/updateRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/updateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateProcess" />
+
+    <EditText
+        android:id="@+id/updateProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/updateRecipe"
+        app:layout_constraintEnd_toEndOf="@+id/updateRecipe"
+        app:layout_constraintStart_toStartOf="@+id/updateRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/updateNotes" />
+
+    <EditText
+        android:id="@+id/updateNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/updateProcess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateRecipeName" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/updateRecipe"
+        app:layout_constraintStart_toStartOf="@+id/updateRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/updateRecipe" />
+
+</android.support.constraint.ConstraintLayout>
