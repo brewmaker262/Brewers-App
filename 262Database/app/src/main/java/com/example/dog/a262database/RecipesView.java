@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -12,9 +13,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.logging.Logger;
 
-public class RecipesView extends Activity
+public class
+RecipesView extends Activity
 {
     private TextView nameTextView;
     private TextView recipeTextView;
@@ -56,12 +61,7 @@ public class RecipesView extends Activity
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-
-
-
     }
-
-
 
     // menu bar selection
     @Override
@@ -98,5 +98,10 @@ public class RecipesView extends Activity
         return true;
     }
 
+
+    public void launchConversion(View view) {
+        // This method is tied to the "Convert" button
+        // TODO Add code to launch conversion activity here
+    }
 
 }

@@ -7,66 +7,138 @@
     tools:context=".UpdateActivity"
     tools:layout_editor_absoluteY="73dp">
 
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="Conversions"
+        app:layout_constraintBottom_toTopOf="@+id/temperatureUpdateTextView"
+        app:layout_constraintEnd_toEndOf="@+id/temperatureUpdateTextView" />
+
+    <TextView
+        android:id="@+id/temperatureUpdateTextView"
+        android:layout_width="301dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/thermodo_unplugged"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logTempButton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="logTemperature"
+        android:text="Log Temp"
+        app:layout_constraintBottom_toTopOf="@+id/temperatureUpdateTextView"
+        app:layout_constraintStart_toStartOf="@+id/temperatureUpdateTextView" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Recipe:"
+        app:layout_constraintEnd_toStartOf="@+id/updateRecipe"
+        app:layout_constraintTop_toTopOf="@+id/updateRecipe" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Notes:"
+        app:layout_constraintEnd_toStartOf="@+id/updateNotes"
+        app:layout_constraintTop_toTopOf="@+id/updateNotes" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Process:"
+        app:layout_constraintEnd_toStartOf="@+id/updateProcess"
+        app:layout_constraintTop_toTopOf="@+id/updateProcess" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:baselineAligned="false"
+        android:text="Name:"
+        app:layout_constraintEnd_toStartOf="@+id/updateRecipeName"
+        app:layout_constraintTop_toTopOf="@+id/updateRecipeName" />
+
     <EditText
         android:id="@+id/updateRecipeName"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="260dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/updateNotes"
-        app:layout_constraintEnd_toEndOf="@+id/updateProcess"
-        app:layout_constraintStart_toStartOf="@+id/updateProcess"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/updateRecipe"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="62dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_width="260dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/updateButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateProcess" />
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/updateRecipeName"
+        app:layout_constraintTop_toBottomOf="@+id/updateRecipeName" />
 
     <EditText
         android:id="@+id/updateProcess"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="51dp"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/updateRecipe"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/updateRecipe"
-        app:layout_constraintStart_toStartOf="@+id/updateRecipe"
-        app:layout_constraintTop_toBottomOf="@+id/updateNotes" />
+        app:layout_constraintTop_toBottomOf="@+id/updateRecipe" />
 
     <EditText
         android:id="@+id/updateNotes"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="62dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginRight="51dp"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/updateProcess"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateRecipeName" />
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/updateProcess"
+        app:layout_constraintTop_toBottomOf="@+id/updateProcess" />
 
     <Button
         android:id="@+id/updateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Update"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/updateRecipe"
-        app:layout_constraintStart_toStartOf="@+id/updateRecipe"
-        app:layout_constraintTop_toBottomOf="@+id/updateRecipe" />
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onUpdate"
+        android:text="Update Recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateNotes" />
 
 </android.support.constraint.ConstraintLayout>

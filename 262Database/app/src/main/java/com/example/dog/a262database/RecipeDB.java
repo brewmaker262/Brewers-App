@@ -62,7 +62,7 @@ public class RecipeDB
             db.execSQL(CREATE_RECIPES_TABLE);
 
             // creates test recipe
-            db.execSQL("INSERT INTO recipes VALUES (1, 'd', 'f', 'g', 'r')");
+            db.execSQL("INSERT INTO recipes VALUES (1, 'Best Beer Eva', '2 Barley, 4 Hops, 1 fairy dust', 'Mix well, and brew', 'Here are important notes')");
 
         }
 

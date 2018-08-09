@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dog.a262database">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InputDataActivity">
+        <activity android:name=".InputDataActivity"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ViewActivity" />
-        <activity android:name=".RecipesView" />
+        <activity android:name=".RecipesView"
+            android:theme="@style/BrewerTheme" />
         <activity android:name=".UpdateActivity"></activity>
     </application>
 

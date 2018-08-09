@@ -3,6 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/background_holo_light_brew</item>
     </style>
+
+    <style name="BrewerTheme" parent="AppTheme" />
 
 </resources>
