@@ -33,13 +33,13 @@ public class RecipeDB
     public static final String NOTES = "notes";
     public static final int COLUMN_NOTES = 4;
 
-    public static final String CREATE_RECIPES_TABLE = "CREATE TABLE " +
-            TABLE_RECIPES + " (" +
-            RECIPE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            RECIPE_NAME + " TEXT," +
-            NOTES + " TEXT," +
-            RECIPE + " TEXT," +
-            PROCESS + " TEXT" + ")";
+    public static final String CREATE_RECIPES_TABLE =
+            "CREATE TABLE " + TABLE_RECIPES + " (" +
+                    RECIPE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    RECIPE_NAME + " TEXT," +
+                    RECIPE + " TEXT," +
+                    PROCESS + " TEXT," +
+                    NOTES + " TEXT" + ")";
 
 
     public static final String DROP_RECIPE_TABLE =

@@ -11,20 +11,24 @@
         android:id="@+id/recipeNameEditText"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/recipeEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="72dp"
         android:text="Recipe name:"
+        app:layout_constraintEnd_toStartOf="@+id/recipeNameEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,72 +36,76 @@
         android:id="@+id/recipeEditText"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:layout_marginTop="150dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        app:layout_constraintStart_toStartOf="@+id/recipeNotesEditText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="171dp"
+        android:layout_marginTop="99dp"
         android:text="Recipe:"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <EditText
         android:id="@+id/processEditText"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="90dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="94dp"
+        android:layout_marginTop="92dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="@+id/addButton"
+        app:layout_constraintBottom_toBottomOf="@+id/recipeNotesEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/recipeNotesEditText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/recipeEditText" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:text="Process:"
-        app:layout_constraintBottom_toBottomOf="@+id/recipeNotesEditText"
+        app:layout_constraintBottom_toBottomOf="@+id/processEditText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/recipeNotesEditText"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="132dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        app:layout_constraintStart_toStartOf="@+id/processEditText"
-        app:layout_constraintTop_toBottomOf="@+id/recipeEditText" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="32dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="76dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="94dp"
+        android:layout_marginTop="78dp"
         android:text="Notes:"
-        app:layout_constraintBottom_toBottomOf="@+id/addButton"
+        app:layout_constraintBottom_toTopOf="@+id/addButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
         android:id="@+id/viewButton"
@@ -113,12 +121,12 @@
     <Button
         android:id="@+id/addButton"
         android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:text="Add Recipe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/viewButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewButton" />
 
 </android.support.constraint.ConstraintLayout>
