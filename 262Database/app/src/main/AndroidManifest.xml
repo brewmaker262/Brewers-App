@@ -14,13 +14,16 @@
         android:theme="@style/AppTheme">
         <activity android:name=".InputDataActivity"
             android:theme="@style/AppTheme">
+        </activity>
+
+        <activity android:name=".ViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewActivity" />
+
         <activity android:name=".RecipesView"
             android:theme="@style/BrewerTheme" />
         <activity android:name=".UpdateActivity"></activity>

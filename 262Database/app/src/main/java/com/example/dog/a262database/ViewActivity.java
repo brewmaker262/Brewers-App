@@ -2,6 +2,8 @@ package com.example.dog.a262database;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.content.Intent;
@@ -72,9 +74,23 @@ public class ViewActivity extends Activity
                 // app icon in action bar clicked; goto parent activity.
                 this.finish();
                 return true;
+
+            case R.id.addButton:
+                //launches the update recipe activity
+                Intent InputDataActivity = new Intent(this, InputDataActivity.class);
+                startActivity(InputDataActivity);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    //options menu for update and delete
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.view_activity_add_button, menu);
+        return true;
     }
 
 }
