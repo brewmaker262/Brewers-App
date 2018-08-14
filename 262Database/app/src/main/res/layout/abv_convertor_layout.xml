@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_full">
+
+    <!-- Explanation -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Input in both textfield and ABV is at lower right corner."
+        android:id="@+id/explanationTV"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <!-- Enter original gravity Textview -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter original gravity"
+        android:id="@+id/originalAmountTV"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <!-- Textfield and lb label -->
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="2"
+            android:ems="10"
+            android:id="@+id/originalAmountET"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="lb"
+            android:id="@+id/lBUnitTV1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Enter final gravity Textview -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter final gravity"
+        android:id="@+id/finalAmountTV"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <!-- Textfield and lb label -->
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="2"
+            android:ems="10"
+            android:id="@+id/finalAmountET"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="lb"
+            android:id="@+id/lBUnitTV2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Alcohol by Volume percentage Textview. -->
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Alcohol by Volume percentage"
+            android:id="@+id/abvTV"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/abvPercentTV"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

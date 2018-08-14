@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.logging.Logger;
 
-public class UpdateActivity extends Activity implements ThermodoListener
+public class UpdateActivity extends Activity implements ThermodoListener, View.OnClickListener
 {
     private EditText updateName;
     private EditText updateRecipe;
@@ -28,6 +28,7 @@ public class UpdateActivity extends Activity implements ThermodoListener
     private String processString = "";
     private String notesString = "";
     private Button updateButton;
+    private Button convertButton;
     private Recipe current;
     private RecipeDB db;
     private int position;
@@ -66,6 +67,8 @@ public class UpdateActivity extends Activity implements ThermodoListener
         updateNotes = (EditText) findViewById(R.id.updateNotes);
         updateButton = (Button) findViewById(R.id.updateButton);
         temperatureUpdateTextView = (TextView) findViewById(R.id.temperatureUpdateTextView);
+        convertButton = (Button)findViewById(R.id.convertButton);
+        convertButton.setOnClickListener(this);
 
         //set widget text
         updateName.setText(current.getRecipeName());
@@ -76,7 +79,6 @@ public class UpdateActivity extends Activity implements ThermodoListener
         //adding a back button to the action bar
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-
     }
 
     public void onUpdate(View v)
@@ -107,11 +109,6 @@ public class UpdateActivity extends Activity implements ThermodoListener
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    public void launchConversion(View view) {
-        // This method is tied to the "Convert" button
-        // TODO Add code to launch conversion activity here
     }
 
     public void logTemperature(View view) {
@@ -190,4 +187,15 @@ public class UpdateActivity extends Activity implements ThermodoListener
         thermodoUpdate.stop();
     }
 
+    // Click one button on page, and redirect to respect pages. Added by Sicheng.
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.convertButton:
+                Intent convertorMainIntent = new Intent(getApplicationContext(),
+                                                         ConvertorMainActivity.class);
+                startActivity(convertorMainIntent);
+                break;
+        }
+    }
 }

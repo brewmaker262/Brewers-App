@@ -2,4 +2,13 @@
     <string name="app_name">BrewMaster</string>
     <string name="thermodo_unplugged">The Thermodo sensor is unplugged. Plug it in to start measuring.</string>
     <string name="thermodo_plugged">The Thermodo sensor is plugged in. Accept permissions to continue.</string>
+
+    <!-- Text on menu -->
+    <string name="receipt_item">Receipt</string>
+    <string name="timer_item">Timer</string>
+    <string name="convertor_item">Convertor</string>
+
+    <!-- Text on convertor activities -->
+    <string name="lme_amount">Amount of LME</string>
+    <string name="dme_amount">Amount of DME</string>
 </resources>

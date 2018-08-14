@@ -27,6 +27,24 @@
         <activity android:name=".RecipesView"
             android:theme="@style/BrewerTheme" />
         <activity android:name=".UpdateActivity"></activity>
+
+        <!-- The following four activities tags are for conversions. -->
+        <activity
+            android:name=".ConvertorMainActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="GDLConvertorActivity"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="DLConvertorActivity"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="ABVConvertorActivity"
+            android:label="@string/app_name" />
+
     </application>
 
 </manifest>

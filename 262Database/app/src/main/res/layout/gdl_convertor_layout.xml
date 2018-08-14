@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_full">
+
+    <!-- Explanation -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Input in any one textfield to convert to the rest two."
+        android:id="@+id/explanationTV"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+
+    <!-- Amount of grain string -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount of grain"
+        android:id="@+id/grainAmountTV"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <!-- Textfield and lb label -->
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="2"
+            android:ems="10"
+            android:id="@+id/grainAmountET"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="lb"
+            android:id="@+id/lBUnitTV1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Amount of LME string -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lme_amount"
+        android:id="@+id/lMEAmountTV"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <!-- Textfield and lb label -->
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/lMEAmountET"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="lb"
+            android:id="@+id/lBUnitTV2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Amount of DME string -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/dme_amount"
+        android:id="@+id/dMEAmountTV"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <!-- Textfield and lb label -->
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <EditText
+            style="@style/layout_horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/dMEAmountET"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="lb"
+            android:id="@+id/lBUnitTV3"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

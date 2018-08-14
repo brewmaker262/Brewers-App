@@ -18,8 +18,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.logging.Logger;
 
-public class
-RecipesView extends Activity
+public class RecipesView extends Activity implements View.OnClickListener
 {
     private TextView nameTextView;
     private TextView recipeTextView;
@@ -27,6 +26,7 @@ RecipesView extends Activity
     private TextView notesTextView;
     private Recipe current;
     private int position;
+    private Button convertButton;
    // private Button deleteButton;
     private RecipeDB db;
 
@@ -56,6 +56,10 @@ RecipesView extends Activity
         recipeTextView.setText(current.getRecipe());
         processTextView.setText(current.getProcess());
         notesTextView.setText(current.getNotes());
+
+        // The following two lines are for convert button.
+        convertButton = (Button)findViewById(R.id.convertButton);
+        convertButton.setOnClickListener(this);
 
         //adding a back button to the action bar
         ActionBar actionBar = getActionBar();
@@ -98,10 +102,15 @@ RecipesView extends Activity
         return true;
     }
 
-
-    public void launchConversion(View view) {
-        // This method is tied to the "Convert" button
-        // TODO Add code to launch conversion activity here
+    // Click one button on page, and redirect to respect pages. Added by Sicheng.
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.convertButton:
+                Intent convertorMainIntent = new Intent(getApplicationContext(),
+                                                         ConvertorMainActivity.class);
+                startActivity(convertorMainIntent);
+                break;
+        }
     }
-
 }

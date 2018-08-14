@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_full">
+
+    <!-- Question TextView -->
+    <TextView
+        style="@style/layout_vertical"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="What would you want to calculate?"
+        android:id="@+id/questionTV"
+        android:layout_margin="10dp"/>
+
+    <!-- Alcohol By Volume Button -->
+    <Button
+        style="@style/style_button_in_list"
+        android:text="Alcohol By Volume"
+        android:background="@drawable/item_background"
+        android:id="@+id/alcohol_by_volume_button" />
+
+    <!-- Separator -->
+    <TextView
+        style="@style/style_separator_in_list"
+        android:id="@+id/separator_one"/>
+
+    <!-- Grain/DME/LME Button -->
+    <Button
+        style="@style/style_button_in_list"
+        android:text="Grain to DME /LME"
+        android:background="@drawable/item_background"
+        android:id="@+id/grain_dme_lme_button" />
+
+    <!-- Separator -->
+    <TextView
+        style="@style/style_separator_in_list"
+        android:id="@+id/separator_two"/>
+
+    <!-- DME/LME Button -->
+    <Button
+        style="@style/style_button_in_list"
+        android:text="DME to LME"
+        android:background="@drawable/item_background"
+        android:id="@+id/dme_lme_button" />
+
+    <!-- Separator -->
+    <TextView
+        style="@style/style_separator_in_list"
+        android:id="@+id/separator_three"/>
+</LinearLayout>
