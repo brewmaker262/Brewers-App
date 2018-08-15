@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UpdateActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/beerbackground"
+
     tools:layout_editor_absoluteY="73dp">
 
     <Button
@@ -23,6 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/background_light"
         android:gravity="center_horizontal"
         android:text="@string/thermodo_unplugged"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -47,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:text="Recipe:"
+        android:background="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/updateRecipe" />
 
@@ -55,6 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="18dp"
         android:text="Notes:"
+        android:background="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/updateNotes" />
 
@@ -63,6 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="18dp"
         android:text="Process:"
+        android:background="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="@+id/updateProcess" />
 
@@ -74,6 +81,7 @@
         android:layout_marginStart="24dp"
         android:baselineAligned="false"
         android:text="Name:"
+        android:background="@android:color/background_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/updateRecipeName" />
 
@@ -85,6 +93,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:background="@android:color/background_light"
         android:inputType="textPersonName"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView6"
@@ -98,6 +107,7 @@
         android:ems="10"
         android:inputType="textMultiLine"
         android:textSize="10sp"
+        android:background="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="@+id/updateRecipeName"
         app:layout_constraintTop_toBottomOf="@+id/updateRecipeName" />
 
@@ -107,6 +117,7 @@
         android:layout_height="90dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:background="@android:color/background_light"
         android:inputType="textMultiLine"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/updateRecipe"
@@ -120,6 +131,7 @@
         android:ems="10"
         android:inputType="textMultiLine"
         android:textSize="10sp"
+        android:background="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="@+id/updateProcess"
         app:layout_constraintTop_toBottomOf="@+id/updateProcess" />
 
