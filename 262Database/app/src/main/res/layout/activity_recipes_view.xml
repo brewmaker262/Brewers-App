@@ -34,19 +34,21 @@
 
             <TextView
                 android:id="@+id/nameTextView"
-                android:layout_width="286dp"
+                android:layout_width="361dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginStart="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginRight="10dp"
                 android:baselineAligned="false"
                 android:text="TextView"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView7"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="24dp"
@@ -60,15 +62,17 @@
                 android:id="@+id/recipeTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginStart="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginRight="10dp"
                 android:text="TextView"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@+id/nameTextView"
                 app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="24dp"
@@ -81,15 +85,17 @@
                 android:id="@+id/processTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginStart="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginRight="10dp"
                 android:text="TextView"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@+id/recipeTextView"
                 app:layout_constraintTop_toBottomOf="@+id/recipeTextView" />
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginStart="24dp"
@@ -102,9 +108,11 @@
                 android:id="@+id/notesTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginStart="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginRight="10dp"
                 android:text="TextView"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@+id/processTextView"
                 app:layout_constraintTop_toBottomOf="@+id/processTextView" />
 

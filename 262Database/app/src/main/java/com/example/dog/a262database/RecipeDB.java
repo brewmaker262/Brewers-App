@@ -62,7 +62,76 @@ public class RecipeDB
             db.execSQL(CREATE_RECIPES_TABLE);
 
             // creates test recipe
-            db.execSQL("INSERT INTO recipes VALUES (1, 'Best Beer Eva', '2 Barley, 4 Hops, 1 fairy dust', 'Mix well, and brew', 'Here are important notes')");
+            String execStr, name, recipe, process, notes = "";
+
+            name = "Moms Special Ale";
+
+            recipe = "6 lbs. English Light syrup malt extract\n" +
+                    "2 lbs. English Light dry mail extract\n" +
+                    "2.2 lbs. Morgans Master Blend Caramalt syrup malt extract\n" +
+                    "1 lb. 80 L. crystal malt\n"+
+                    ".75 cup corn sugar (priming)\n";
+
+            process = "Place 80 L. crystal malt in straining bag and suspend in 3 gallons cold water, bring to boil. "+
+                    "Once water comes to boil, remove spent crystal malt grains. Add all syrup and dry malt extracts."+
+                    " Boil for 30 minutes, then stir in Irish moss. Boil for an additional 25 minutes, then remove pot from flame. Cool until 100 degrees F.\n";
+
+            notes = "This beer came out really good after only 2 weeks in the bottle. Balanced pretty nicely.\n";
+
+            execStr = "INSERT INTO recipes VALUES (1, '" + name + "', '" + recipe + "', '" + process + "', '" + notes + "')";
+            db.execSQL(execStr);
+
+            name = "Rainy Day Porter";
+
+            recipe = "2 pounds, Alexander extract syrup (pale)\n" +
+                    "4 pounds, Yellow Dog extract syrup (amber)\n" +
+                    "1-1/4 pounds, Brown Sugar\n" +
+                    "1/2 pound, Black Patent\n"+
+                    "1/4 pound, Roasted Barley\n";
+
+            process = "Steep grains at 150 degrees for 40 minutes before boil. Add malt and brown sugar. "+
+                    "Boil for 60 minutes. Add Nugget hops at begining of boil. Add ginger last 10 "+
+                    "minutes of boil. Turn off heat add water to make total about 5.3 gallons.\n";
+
+            notes = "I used two types of yeast pitched simultaneously for this brew.\n";
+
+            execStr = "INSERT INTO recipes VALUES (2, '" + name + "', '" + recipe + "', '" + process + "', '" + notes + "')";
+            db.execSQL(execStr);
+
+            name = "Oatmeal Stout 9";
+
+            recipe = "6.5 lbs light malt Extract\n" +
+                    "1.5 lbs American 2-row malt\n" +
+                    "1 lb. flaked oats\n" +
+                    "3/4 lb. roasted barley\n"+
+                    "1/4 lb. chocolate malt\n";
+
+            process = "Steep-Mash process: Steep grains in grain bag in 4-5 gallons water, for 45 minutes at 158-159F. "+
+                    "Remove grain bag and rinse grains with water at same temperature, until about 5.5-6.0 gallons in brewpot. " +
+                    "Add malt extract. Bring to boil, add hops and boil for 60 minutes.\n";
+
+            notes = "Heres a recipie that was created by the guys down at the brewshop when I walked in and said: I want to brew an Oatmeal Stout, make me a recipie.\n";
+
+            execStr = "INSERT INTO recipes VALUES (3, '" + name + "', '" + recipe + "', '" + process + "', '" + notes + "')";
+            db.execSQL(execStr);
+
+            name = "Apricot Ale";
+
+            recipe = "4-1/2 pounds light dry malt extract\n" +
+                    "1 pound, German pilsner malt (steeped at 150 F for 1 hour)\n" +
+                    "1/4 teaspoon, Irish moss\n" +
+                    "1 ounce, Chinook hops (12.2% alpha)\n"+
+                    "2 1/2 pounds, frozen, pitted, halved apricots";
+
+            process = "Steep pilsner malt at 150 degrees for 1 hour. Strain and sparge grain. Add malt extract. "+
+                    "Bring to boil and boil for 60 minutes. Add 1 ounce Chinook hops at 30 minutes. "+
+                    "Add Mt. Hood in the last 2 minutes. The apricots were added at the end of the boil.\n";
+
+            notes = "Nice golden amber color with a good hop bite. About half way through a mug, I start noticing the taste of cloves.\n";
+
+            execStr = "INSERT INTO recipes VALUES (4, '" + name + "', '" + recipe + "', '" + process + "', '" + notes + "')";
+            db.execSQL(execStr);
+
 
         }
 

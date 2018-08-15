@@ -86,8 +86,8 @@ public class RecipesView extends Activity implements View.OnClickListener
                 Intent updateActivity = new Intent(this, UpdateActivity.class);
                 updateActivity.putExtra("position", position);
                 startActivity(updateActivity);
-                Toast.makeText(getBaseContext(),"this is at position " + position,
-                        Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getBaseContext(),"this is at position " + position,
+                        //Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

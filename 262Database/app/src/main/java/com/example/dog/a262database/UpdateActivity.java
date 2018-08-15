@@ -57,8 +57,8 @@ public class UpdateActivity extends Activity implements ThermodoListener, View.O
         thermodoUpdate = ThermodoFactory.getThermodoInstance(this);
         thermodoUpdate.setThermodoListener(this);
 
-        Toast.makeText(getBaseContext(),"this is the position " + position,
-                        Toast.LENGTH_SHORT).show();
+        // Toast.makeText(getBaseContext(),"this is the position " + position,
+                        //Toast.LENGTH_SHORT).show();
 
         //get widget refs
         updateName = (EditText) findViewById(R.id.updateRecipeName);
