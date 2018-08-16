@@ -7,13 +7,13 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.text.DecimalFormat;
 
 /**
  * This class calculates ABV.
@@ -224,7 +224,9 @@ public class ABVConvertorActivity extends Activity {
                 return;
             }
 
-            resStrBuffer.append(Double.toString((finAmt - oriAmt)  * 131.25));
+            // Keep two digits after decimal point.
+            DecimalFormat df = new DecimalFormat("#.00");
+            resStrBuffer.append(df.format((finAmt - oriAmt)  * 131.25));
             resStrBuffer.append("%");
 
             abvPercentTV.setText(resStrBuffer.toString());
